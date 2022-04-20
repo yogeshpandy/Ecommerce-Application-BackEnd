@@ -1,0 +1,23 @@
+1. Design & Requirement Analysis
+   Services:
+    Product Details Service
+    Inventory Details Service
+    Customer Details Service
+    Cart Details Service
+    Order Details Service
+    
+2. Creation of Spring Cloud Configuration Server
+    Details:
+      Dependencies:
+        Cloud config server
+        Cloud Bootstrap
+        DevTools
+        Test
+     Configure the git uri in bootstrap.properties
+      1. Create a Spring Boot Application or take an Existing Application. 
+      2. Add Maven Dependency in pom.xml (Spring-cloud-config-server)
+      3. Add @ConfigServer annotation to the SpringBootClass
+      4. Set Up a Local Git Repository
+      5. Add the Local Git Repository url in bootstrap.properties
+      spring.cloud.config.server.git.uri=file://{path of Config Server Repo}
+      
